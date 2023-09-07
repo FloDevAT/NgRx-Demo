@@ -1,0 +1,10 @@
+nav {
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-evenly;
+
+  .active {
+    text-decoration: underline;
+  }
+}

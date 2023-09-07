@@ -1,0 +1,18 @@
+<ng-container *ngIf="text$ | async as text">
+  <h1>{{text.text}}</h1>
+</ng-container>
+
+<form (ngSubmit)="onSubmit($event)">
+  <input
+    #textInput
+    type="text"
+    name="tfTextInput"
+    id="tfTextInput"
+    placeholder="Enter your text"
+  />
+
+  <input
+    type="submit"
+    value="Set Text"
+  />
+</form>
